@@ -1,0 +1,72 @@
+baseURL = "https://chio.in"
+languageCode = "zh-CN"
+title = "Philo"
+copyright = "© 2020-2021 Philo"
+paginate = 30
+googleAnalytics = ""
+theme = "minima"
+
+[author]
+name = "Philo's Blog"
+slogon = "记录生活，记录学习"
+description = "那些听不见音乐的人，都以为跳舞的人疯了。"
+
+[params]
+# iam is the beginning words of your self-introduction.
+# iam = "I am"
+# timeformat 
+timeformat = "2006-01-02"
+# switch for turning on/off lights.
+switch = ["⚫", "⚪"]
+# if true, date of posts will be displayed in the homepage.
+displayDate = true
+# if true, users can select text from your post.
+selectable = true
+# custom global font. notice: `globalFontFamily` won't be working
+# on texts in some special positions like on titles
+# globalFontFamily = 'Helvatica, sans-serif'
+globalFontFamily = 'LXGW WenKai'
+toc = "bar"
+[[params.social]]
+name = "github"  
+url = "https://github.com/ielave"
+svg = ""
+
+[[params.social]]
+name = "steam"  
+url = "https://steamcommunity.com/id/ielave/"
+svg = ""
+
+[[params.social]]
+name = "rss"
+url = "/index.xml"
+svg = ""
+
+[[menu.main]]
+name = "首页"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "笔记"
+url = "/note"
+weight = 2
+[[menu.main]]
+name = "分享"
+url = "/share"
+weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+
+# Make sure all the codes in a post are highlighted correctly
+# so better not edit this.
+[markup.highlight]
+lineNos = true
+noClasses = false
+
+[module]
+  [module.hugoVersion]
+    extended = true
